@@ -11,20 +11,14 @@ def main(start, end, steps):
 
 	r_min = int(start[:2], 16)
 	r_max = int(end[:2], 16)
-	# r_steps = float(r_max - r_min) / float(steps)
-	# r_grad = np.arange(r_min, r_max+1, r_steps)
 	r_grad = np.linspace(r_min, r_max, steps)
 
 	g_min = int(start[2:4], 16)
 	g_max = int(end[2:4], 16)
-	# g_steps = float(g_max - g_min) / float(steps)
-	# g_grad = np.arange(g_min, g_max+1, g_steps)
 	g_grad = np.linspace(g_min, g_max, steps)
 
 	b_min = int(start[4:], 16)
 	b_max = int(end[4:], 16)
-	# b_steps = float(b_max - b_min) / float(steps)
-	# b_grad = np.arange(b_min, b_max+1, b_steps)
 	b_grad = np.linspace(b_min, b_max, steps)
 
 
