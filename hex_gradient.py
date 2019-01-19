@@ -42,13 +42,13 @@ if __name__ == '__main__':
 
         print(c)
 
-        # for i, sd in enumerate(np.linspace(0, 5, g_len)):
-        # 	x = [rnd.gauss(0,sd) for a in np.arange(1000)]
-        # 	pl.hist(x, histtype='step', lw=2, color=c[i])
-        #
-        # pl.show()
-
-        x = np.arange(0, g_len, 1)
-        y = [0]*g_len
-        pl.scatter(x, y, c=c, s=1000, linewidths = 0)
+        for i, sd in enumerate(np.linspace(0, 5, g_len)):
+        	x = [rnd.gauss(0,sd) for a in np.arange(1000)]
+        	pl.hist(x, histtype='step', lw=5, color=c[i])
+        
         pl.show()
+
+        # x = np.arange(0, g_len, 1)
+        # y = [0]*g_len
+        # pl.scatter(x, y, c=c, s=1000, linewidths = 0)
+        # pl.show()
